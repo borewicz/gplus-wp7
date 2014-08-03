@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="about" xml:space="preserve">
+    <value>about</value>
+  </data>
+  <data name="addedYouToCircles" xml:space="preserve">
+    <value>added you to circles</value>
+  </data>
+  <data name="all" xml:space="preserve">
+    <value>all</value>
+  </data>
+  <data name="basicInfo" xml:space="preserve">
+    <value>Basic information</value>
+  </data>
+  <data name="best" xml:space="preserve">
+    <value>Best</value>
+  </data>
+  <data name="bigPosts" xml:space="preserve">
+    <value>POSTS</value>
+  </data>
+  <data name="bragging" xml:space="preserve">
+    <value>Bragging rights</value>
+  </data>
+  <data name="bySigning" xml:space="preserve">
+    <value>By signing to Google+ service, you agree to Google Terms of Service.</value>
+  </data>
+  <data name="camera" xml:space="preserve">
+    <value>camera</value>
+  </data>
+  <data name="categories" xml:space="preserve">
+    <value>categories</value>
+  </data>
+  <data name="category" xml:space="preserve">
+    <value>category</value>
+  </data>
+  <data name="circles" xml:space="preserve">
+    <value>circles</value>
+  </data>
+  <data name="clear" xml:space="preserve">
+    <value>clear</value>
+  </data>
+  <data name="commented" xml:space="preserve">
+    <value>commented</value>
+  </data>
+  <data name="communities" xml:space="preserve">
+    <value>communities</value>
+  </data>
+  <data name="community" xml:space="preserve">
+    <value>COMMUNITY</value>
+  </data>
+  <data name="contributeTo" xml:space="preserve">
+    <value>Contribute to</value>
+  </data>
+  <data name="currently" xml:space="preserve">
+    <value>Currently</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>delete</value>
+  </data>
+  <data name="didSomething" xml:space="preserve">
+    <value>did something that I don't know xD</value>
+  </data>
+  <data name="edit" xml:space="preserve">
+    <value>edit</value>
+  </data>
+  <data name="education" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="employment" xml:space="preserve">
+    <value>Employment</value>
+  </data>
+  <data name="everyone" xml:space="preserve">
+    <value>Everyone</value>
+  </data>
+  <data name="gavePlusOne" xml:space="preserve">
+    <value>gave +1 for your comment</value>
+  </data>
+  <data name="gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="getMore" xml:space="preserve">
+    <value>get more</value>
+  </data>
+  <data name="git" xml:space="preserve">
+    <value>post</value>
+    <comment>p</comment>
+  </data>
+  <data name="googleBrowser" xml:space="preserve">
+    <value>google+ in browser</value>
+  </data>
+  <data name="googlePlus" xml:space="preserve">
+    <value>Google+ client for Windows Phone</value>
+  </data>
+  <data name="imFaggot" xml:space="preserve">
+    <value>OP is a faggot (or report bug)</value>
+  </data>
+  <data name="intro" xml:space="preserve">
+    <value>Intro</value>
+  </data>
+  <data name="link" xml:space="preserve">
+    <value>link</value>
+  </data>
+  <data name="linkContent" xml:space="preserve">
+    <value>Enter link (with "http://) and tap OK to continue.</value>
+  </data>
+  <data name="links" xml:space="preserve">
+    <value>Links</value>
+  </data>
+  <data name="login" xml:space="preserve">
+    <value>LOGIN</value>
+  </data>
+  <data name="lookingFor" xml:space="preserve">
+    <value>Looking for</value>
+  </data>
+  <data name="metionedYou" xml:space="preserve">
+    <value>mentioned you</value>
+  </data>
+  <data name="newPost" xml:space="preserve">
+    <value>new post</value>
+  </data>
+  <data name="nicks" xml:space="preserve">
+    <value>Nicks:</value>
+  </data>
+  <data name="notifications" xml:space="preserve">
+    <value>notifications</value>
+  </data>
+  <data name="occupation" xml:space="preserve">
+    <value>Occupation</value>
+  </data>
+  <data name="otherProfiles" xml:space="preserve">
+    <value>Other profiles</value>
+  </data>
+  <data name="photo" xml:space="preserve">
+    <value>photo</value>
+  </data>
+  <data name="places" xml:space="preserve">
+    <value>Places</value>
+  </data>
+  <data name="posted" xml:space="preserve">
+    <value>posted</value>
+  </data>
+  <data name="postedInCommunity" xml:space="preserve">
+    <value>posted in community</value>
+  </data>
+  <data name="postIn" xml:space="preserve">
+    <value>Post in:</value>
+  </data>
+  <data name="postInCommunity" xml:space="preserve">
+    <value>post in community</value>
+  </data>
+  <data name="posts" xml:space="preserve">
+    <value>posts</value>
+  </data>
+  <data name="previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="privacy" xml:space="preserve">
+    <value>Privacy:</value>
+  </data>
+  <data name="profile" xml:space="preserve">
+    <value>profile</value>
+  </data>
+  <data name="recent" xml:space="preserve">
+    <value>Recent</value>
+  </data>
+  <data name="refresh" xml:space="preserve">
+    <value>refresh</value>
+  </data>
+  <data name="relationship" xml:space="preserve">
+    <value>Relationship</value>
+  </data>
+  <data name="reply" xml:space="preserve">
+    <value>reply</value>
+  </data>
+  <data name="reshare" xml:space="preserve">
+    <value>reshare</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>search</value>
+  </data>
+  <data name="signIn" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="signOut" xml:space="preserve">
+    <value>sign out</value>
+  </data>
+  <data name="skills" xml:space="preserve">
+    <value>Skills</value>
+  </data>
+  <data name="story" xml:space="preserve">
+    <value>Story</value>
+  </data>
+  <data name="stream" xml:space="preserve">
+    <value>stream</value>
+  </data>
+  <data name="tagline" xml:space="preserve">
+    <value>Tagline</value>
+  </data>
+  <data name="text" xml:space="preserve">
+    <value>Text:</value>
+  </data>
+  <data name="usingThisSoftware" xml:space="preserve">
+    <value>By using this software you agree to Google+ Terms and Conditiions.</value>
+  </data>
+  <data name="work" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="you" xml:space="preserve">
+    <value>You</value>
+  </data>
+  <data name="yourCircles" xml:space="preserve">
+    <value>Your circles</value>
+  </data>
+  <data name="yourProfile" xml:space="preserve">
+    <value>your profile</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>cancel</value>
+  </data>
+  <data name="editComment" xml:space="preserve">
+    <value>Edit comment</value>
+  </data>
+  <data name="buy" xml:space="preserve">
+    <value>buy</value>
+  </data>
+  <data name="faggot" xml:space="preserve">
+    <value>;(</value>
+  </data>
+  <data name="fullCredentials" xml:space="preserve">
+    <value>Enter your FULL credentials.</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="reportBug" xml:space="preserve">
+    <value>report bug</value>
+  </data>
+  <data name="wrongCredentials" xml:space="preserve">
+    <value>LOL, you typed wrong credentials. Try again.</value>
+  </data>
+  <data name="commentedYourPost" xml:space="preserve">
+    <value>commented your post</value>
+  </data>
+  <data name="plusForYourPost" xml:space="preserve">
+    <value>gave +1 for your post</value>
+  </data>
+  <data name="aRelationship" xml:space="preserve">
+    <value>A relationship</value>
+  </data>
+  <data name="civilUnion" xml:space="preserve">
+    <value>In a civil union</value>
+  </data>
+  <data name="complicated" xml:space="preserve">
+    <value>It's complicated</value>
+  </data>
+  <data name="currentContributeTo" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="dating" xml:space="preserve">
+    <value>Dating</value>
+  </data>
+  <data name="domesticPartnership" xml:space="preserve">
+    <value>In a domestic partnership</value>
+  </data>
+  <data name="dontSay" xml:space="preserve">
+    <value>I don't want to say</value>
+  </data>
+  <data name="engaged" xml:space="preserve">
+    <value>Engaged</value>
+  </data>
+  <data name="female" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="friends" xml:space="preserve">
+    <value>Friends</value>
+  </data>
+  <data name="inRelationship" xml:space="preserve">
+    <value>In a relationship</value>
+  </data>
+  <data name="male" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="married" xml:space="preserve">
+    <value>Married</value>
+  </data>
+  <data name="networking" xml:space="preserve">
+    <value>Networking</value>
+  </data>
+  <data name="noSpecified" xml:space="preserve">
+    <value>No specified</value>
+  </data>
+  <data name="openRelationship" xml:space="preserve">
+    <value>In a open relationship</value>
+  </data>
+  <data name="otherGender" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="pastContributeTo" xml:space="preserve">
+    <value>Past</value>
+  </data>
+  <data name="single" xml:space="preserve">
+    <value>Single</value>
+  </data>
+  <data name="widowed" xml:space="preserve">
+    <value>Widowed</value>
+  </data>
+  <data name="loginError" xml:space="preserve">
+    <value>There was a problem with logging. Make sure you have a internet connectivity and  Google+ service enabled in your Google account.</value>
+  </data>
+  <data name="doYouReallyWant" xml:space="preserve">
+    <value>Do you really want to delete this activity?</value>
+  </data>
+  <data name="editPost" xml:space="preserve">
+    <value>Edit post</value>
+  </data>
+  <data name="username" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>yes</value>
+  </data>
+  <data name="loading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="posting" xml:space="preserve">
+    <value>Posting...</value>
+  </data>
+  <data name="uploading" xml:space="preserve">
+    <value>Uploading...</value>
+  </data>
+  <data name="enterToken" xml:space="preserve">
+    <value>Enter token:</value>
+  </data>
+  <data name="areYouGoing" xml:space="preserve">
+    <value>Are you going?</value>
+  </data>
+  <data name="communitiesTitle" xml:space="preserve">
+    <value>Communities</value>
+  </data>
+  <data name="events" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="eventTitle" xml:space="preserve">
+    <value>EVENT</value>
+  </data>
+  <data name="markAsRead" xml:space="preserve">
+    <value>mark as read</value>
+  </data>
+  <data name="maybe" xml:space="preserve">
+    <value>Maybe</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="people" xml:space="preserve">
+    <value>People</value>
+  </data>
+  <data name="postsTitle" xml:space="preserve">
+    <value>Posts</value>
+  </data>
+  <data name="result" xml:space="preserve">
+    <value>results</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>save</value>
+  </data>
+  <data name="type" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="nooo" xml:space="preserve">
+    <value>Noooooo!</value>
+  </data>
+  <data name="tapTo" xml:space="preserve">
+    <value>Tap OK to continue.</value>
+  </data>
+  <data name="unexpected" xml:space="preserve">
+    <value>An unexpected error has occurred. Contact with developer.</value>
+  </data>
+</root>

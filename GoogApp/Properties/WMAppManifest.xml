@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
+  <App xmlns="" ProductID="{29c6e525-f297-4c76-ab59-fca0858dbbb8}" Title="gPlus" RuntimeType="Silverlight" Version="1.0" Genre="apps.normal" Author="G.T.F.O. PRODUCTIONS" Description="Stay connected and share life as it happens with Google+ client for Windows Phone. Post, view photos, &#xD;&#xA;blablablblabbalablblabalbalabalablabbalabalabalabalaba etc." Publisher="G.T.F.O. PRODUCTIONS" BitsPerPixel="32">
+    <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_MEDIALIB" />
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="LoginPage.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="GoogAppToken" TaskName="_default">
+        <TemplateType5>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
+          <Count>0</Count>
+          <Title>Google+</Title>
+        </TemplateType5>
+      </PrimaryToken>
+    </Tokens>
+  </App>
+</Deployment>

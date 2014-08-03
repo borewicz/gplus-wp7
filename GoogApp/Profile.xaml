@@ -1,0 +1,204 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="GoogApp.Profile"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+	<phone:PhoneApplicationPage.ApplicationBar>
+		<shell:ApplicationBar>
+			<shell:ApplicationBarIconButton IconUri="/Assets/AppBar/appbar.user.png" Text="circles" Click="ApplicationBarIconButton_Click_1"/>
+			<shell:ApplicationBarIconButton IconUri="/Assets/AppBar/appbar.list.png" Text="posts" Click="postsClick"/>
+		</shell:ApplicationBar>
+	</phone:PhoneApplicationPage.ApplicationBar>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <controls:Pivot Title="{StaticResource AppName}">
+            <!--Pivot item one-->
+            <controls:PivotItem Header="{Binding Path=LocalizedResources.profile, Source={StaticResource LocalizedStrings}}">
+                <!--ContentPanel - place additional content here-->
+                <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+                    <ScrollViewer>
+                        <StackPanel>
+                                <!--<Image x:Name="bigImage" Margin="0,0,0,100"/>-->
+                                <Image Source="{Binding avatarUrl}" Margin="0" Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <Image.Clip>
+                                        <EllipseGeometry x:Name="Ellipse" RadiusX="50" RadiusY="50" Center="50,50"/>
+                                    </Image.Clip>
+                                </Image>
+                            <TextBlock Text="{Binding name}" x:Name="nameLabel" TextWrapping="Wrap" TextAlignment="Center" FontSize="29.333" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Path=LocalizedResources.story, Source={StaticResource LocalizedStrings}}" FontWeight="Bold" FontSize="24" Margin="0,0,0,8" />
+                            <StackPanel x:Name="introStack">
+                                <TextBlock Text="{Binding Path=LocalizedResources.intro, Source={StaticResource LocalizedStrings}}" Margin="0" FontSize="21.333" />
+                                <TextBlock Text="{Binding intro}" TextWrapping="Wrap"/>
+                            </StackPanel>
+                            <StackPanel x:Name="taglineStack">
+                                <TextBlock Text="{Binding Path=LocalizedResources.tagline, Source={StaticResource LocalizedStrings}}" Margin="0" FontSize="21.333" />
+                                <TextBlock Text="{Binding intro}" TextWrapping="Wrap" x:Name="taglineLabel"/>
+                            </StackPanel>
+                            <StackPanel x:Name="bragStack">
+                                <TextBlock Text="{Binding Path=LocalizedResources.bragging, Source={StaticResource LocalizedStrings}}" FontSize="21.333" />
+                                <TextBlock Text="{Binding braggingRights}" TextWrapping="Wrap"/>
+                            </StackPanel>
+                            <StackPanel x:Name="eduStack">
+                                <TextBlock Text="{Binding Path=LocalizedResources.education, Source={StaticResource LocalizedStrings}}" FontSize="24" FontWeight="Bold" Margin="0,8"/>
+                                <ListBox ItemsSource="{Binding education}" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel>
+                                                <TextBlock Text="{Binding name}" />
+                                                <TextBlock Text="{Binding title}" Foreground="Gray"/>
+                                                <TextBlock Text="{Binding description}" Foreground="Gray"/>
+                                                <TextBlock Text="{Binding '', Converter={StaticResource YearsConverter}}" Foreground="Gray"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                            </StackPanel>
+                            <TextBlock Text="{Binding Path=LocalizedResources.work, Source={StaticResource LocalizedStrings}}" FontSize="24" FontWeight="Bold" Margin="0,8" x:Name="workLabel"/>
+                            <StackPanel x:Name="occStack">
+                                <TextBlock Text="{Binding Path=LocalizedResources.occupation, Source={StaticResource LocalizedStrings}}" FontSize="21.333" />
+                                <TextBlock Text="{Binding occupation}" />
+                            </StackPanel>
+                            <StackPanel x:Name="skillsStack">
+                                <TextBlock Text="{Binding Path=LocalizedResources.skills, Source={StaticResource LocalizedStrings}}" FontSize="21.333" />
+                                <TextBlock Text="{Binding skills}" />
+                            </StackPanel>
+                            <StackPanel x:Name="employStack">
+                                <TextBlock Text="{Binding Path=LocalizedResources.employment, Source={StaticResource LocalizedStrings}}" FontSize="21.333" />
+                                <ListBox ItemsSource="{Binding employment}" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel>
+                                                <TextBlock Text="{Binding name}" />
+                                                <TextBlock Text="{Binding title}" Foreground="Gray"/>
+                                                <TextBlock Text="{Binding description}" Foreground="Gray"/>
+                                                <TextBlock Text="{Binding '', Converter={StaticResource YearsConverter}}" Foreground="Gray"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                            </StackPanel>
+                            <TextBlock Text="{Binding Path=LocalizedResources.places, Source={StaticResource LocalizedStrings}}" FontSize="24" FontWeight="Bold" Margin="0,8"/>
+                            <!--<Image Source="{Binding mapUrl}" />-->
+                            <StackPanel x:Name="homeStack">
+                                <TextBlock Text="{Binding Path=LocalizedResources.currently, Source={StaticResource LocalizedStrings}}" FontSize="21.333" />
+                                <TextBlock Text="{Binding home}" />
+                            </StackPanel>
+                            <StackPanel x:Name="prevStack">
+                                <TextBlock Text="{Binding Path=LocalizedResources.previous, Source={StaticResource LocalizedStrings}}" FontSize="21.333" />
+                                <ListBox ItemsSource="{Binding olderHomes}" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel>
+                                                <TextBlock Text="{Binding}" Foreground="Gray"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                            </StackPanel>
+                            <TextBlock Text="{Binding Path=LocalizedResources.basicInfo, Source={StaticResource LocalizedStrings}}" FontSize="24" FontWeight="Bold" Margin="0,8" />
+                            <StackPanel x:Name="genStack">
+                                <TextBlock Text="{Binding Path=LocalizedResources.gender, Source={StaticResource LocalizedStrings}}" FontSize="21.333"  />
+                                <TextBlock Text="{Binding gender, Converter={StaticResource GenderConverter}}" />
+                            </StackPanel>
+                            <StackPanel x:Name="lookStack">
+                                <TextBlock Text="{Binding Path=LocalizedResources.lookingFor, Source={StaticResource LocalizedStrings}}" FontSize="21.333" />
+                            <ListBox ItemsSource="{Binding lookingFor}" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding '', Converter={StaticResource LookingForConverter}}" Foreground="Gray"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                            </StackPanel>
+                            <StackPanel x:Name="relationStack">
+                                <TextBlock Text="{Binding Path=LocalizedResources.relationship, Source={StaticResource LocalizedStrings}}" FontSize="21.333" />
+                                <TextBlock Text="{Binding relationship, Converter={StaticResource RelationshipConverter}}" />
+                            </StackPanel>
+                            <StackPanel x:Name="nicksStack">
+                                <TextBlock Text="{Binding Path=LocalizedResources.nicks, Source={StaticResource LocalizedStrings}}" FontSize="21.333" />
+                                <ListBox ItemsSource="{Binding nicks}" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel>
+                                                <TextBlock Text="{Binding}" Foreground="Gray"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                            </StackPanel>
+                            <TextBlock Text="{Binding Path=LocalizedResources.links, Source={StaticResource LocalizedStrings}}" FontSize="24" FontWeight="Bold" Margin="0,8" />
+                            <StackPanel x:Name="otherStack">
+                                <TextBlock Text="{Binding Path=LocalizedResources.otherProfiles, Source={StaticResource LocalizedStrings}}" FontSize="21.333"/>
+                                <ListBox ItemsSource="{Binding otherProfiles}" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid Tag="{Binding link}" Tap="Grid_Tap_1" Margin="0,4">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="20" />
+                                                    <ColumnDefinition Width="*" />
+                                                </Grid.ColumnDefinitions>
+                                                <Image Source="{Binding faviconUrl}" Grid.Column="0" />
+                                                <TextBlock Text="{Binding title}" Grid.Column="1" FontSize="20" Margin="8,0,0,0"  />
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                            </StackPanel>
+                            <StackPanel x:Name="conStack">
+                                <TextBlock Text="{Binding Path=LocalizedResources.contributeTo, Source={StaticResource LocalizedStrings}}" FontSize="21.333"/>
+                                <ListBox ItemsSource="{Binding contributeTo}" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid Tag="{Binding link}" Tap="Grid_Tap_1" Margin="0,4">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="20" />
+                                                    <ColumnDefinition Width="*" />
+                                                </Grid.ColumnDefinitions>
+                                                <Image Source="{Binding faviconUrl}" Grid.Column="0" />
+                                                <StackPanel Grid.Column="1" Margin="8,0,0,0" >
+                                                    <TextBlock Text="{Binding title}" FontSize="20" />
+                                                    <TextBlock Text="{Binding role, Converter={StaticResource RoleConverter}}" Foreground="Gray"/>
+                                                </StackPanel>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                            </ListBox>
+                            </StackPanel>
+                            <StackPanel x:Name="linksStack">
+                                <TextBlock Text="{Binding Path=LocalizedResources.links, Source={StaticResource LocalizedStrings}}" FontSize="21.333"/>
+                            <ListBox ItemsSource="{Binding links}" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid Tag="{Binding link}" Tap="Grid_Tap_1" Margin="0,4">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="20" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Image Source="{Binding faviconUrl}" Grid.Column="0" />
+                                            <TextBlock Text="{Binding title}" Grid.Column="1" FontSize="20" Margin="8,0,0,0" />
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                            </StackPanel>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </controls:PivotItem>
+        </controls:Pivot>
+    </Grid>
+
+</phone:PhoneApplicationPage>

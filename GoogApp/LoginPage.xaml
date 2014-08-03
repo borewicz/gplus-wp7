@@ -1,0 +1,66 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:cs="clr-namespace:CS.Windows.Controls;assembly=CS.Windows.Controls"
+    x:Class="GoogApp.LoginPage"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+
+        <!--ContentPanel - place additional content here-->
+
+        <!--ContentPanel - place additional content here-->
+        <!--<ProgressBar x:Name="progressBar" Margin="0" Grid.Row="1" VerticalAlignment="Top" IsIndeterminate="True" Visibility="Collapsed"/>-->
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="LoginPanel" Grid.RowSpan="2" Margin="10,20,10,0" d:IsHidden="True">
+        	<StackPanel Orientation="Vertical" Margin="0,0,0,399">
+        		<TextBlock TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.signIn, Source={StaticResource LocalizedStrings}}" Margin="10,0" FontSize="24"/>
+        		<TextBlock TextWrapping="Wrap" Margin="10,10,10,0" Text="{Binding Path=LocalizedResources.username, Source={StaticResource LocalizedStrings}}" />
+        		<TextBox Margin="0" TextWrapping="Wrap" VerticalAlignment="Top" x:Name="usernameBox" InputScope="EmailNameOrAddress"/>
+        		<TextBlock TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.password, Source={StaticResource LocalizedStrings}}" Margin="10,0"/>
+        		<PasswordBox VerticalAlignment="Top" x:Name="passwordBox"/>
+        		<TextBlock TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.bySigning, Source={StaticResource LocalizedStrings}}" Margin="10,0" />
+        		<Button Content="{Binding LocalizedResources.login, Source={StaticResource LocalizedStrings}}" Tap="Button_Tap_1" VerticalAlignment="Center" Margin="0,10,0,0" BorderThickness="0" Background="#FFED1C24" Foreground="#DEFFFFFF" Height="80"/>
+        	</StackPanel>
+        </Grid>
+		<Grid x:Name="TokenPanel" Grid.RowSpan="2" Margin="10,20,10,0" Visibility="Collapsed">
+        	<StackPanel Orientation="Vertical" Margin="0,0,0,399">
+        		<TextBlock TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.signIn, Source={StaticResource LocalizedStrings}}" Margin="10,0" FontSize="24"/>
+        		<TextBlock TextWrapping="Wrap" Margin="10,10,10,0" Text="{Binding Path=LocalizedResources.enterToken, Source={StaticResource LocalizedStrings}}" />
+        		<TextBox Margin="0" TextWrapping="Wrap" VerticalAlignment="Top" x:Name="tokenBox" InputScope="Number"/>
+        		<Button Content="{Binding LocalizedResources.login, Source={StaticResource LocalizedStrings}}" Tap="tokenButtonTap" VerticalAlignment="Center" Margin="0,10,0,0" BorderThickness="0" Background="#FFED1C24" Foreground="#DEFFFFFF" Height="80"/>
+        	</StackPanel>
+        </Grid>
+        <Canvas Margin="29,404,-127,-181" Grid.RowSpan="2">
+        	<Ellipse HorizontalAlignment="Left" Height="130" Stroke="#FF42B449" StrokeThickness="30" VerticalAlignment="Top" Width="130" Canvas.Left="55"/>
+        	<Ellipse HorizontalAlignment="Left" Height="430" Stroke="#FF7090C8" StrokeThickness="60" VerticalAlignment="Top" Width="430" Canvas.Left="148" Canvas.Top="48"/>
+        	<Ellipse HorizontalAlignment="Left" Height="380" Stroke="#FFCF4C3B" StrokeThickness="60" VerticalAlignment="Top" Width="380" Canvas.Top="203"/>
+        </Canvas>
+        <!--<Path x:Name="downloadPath" Width="26" Height="41" Canvas.Left="25" Canvas.Top="16" Stretch="Fill" Fill="{StaticResource PhoneForegroundBrush}" Data="F1 M 25,52L 51,52L 51,57L 25,57L 25,52 Z M 35,16L 41,16L 41,36.5L 49,27L 49,36.5L 38,49L 27,36.5L 27,27L 35,36.5L 35,16 Z " HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,300" Grid.Row="1" UseLayoutRounding="False" Hold="downloadPath_Hold"/>-->
+        <TextBlock Text="{Binding Path=LocalizedResources.loading, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,300" Grid.Row="1" x:Name="downloadPath"/>
+		<!--
+        <Rectangle Fill="#FFDF232A" HorizontalAlignment="Left" Height="300" Margin="68,122,0,0" Grid.RowSpan="2" Stroke="#FFBABABA" StrokeThickness="0" VerticalAlignment="Top" Width="300"/>
+        <Ellipse HorizontalAlignment="Left" Height="140" Margin="127,225,0,0" Grid.RowSpan="2" Stroke="White" VerticalAlignment="Top" Width="140" StrokeThickness="25"/>
+        <Ellipse HorizontalAlignment="Left" Height="100" Margin="206,183,0,0" Grid.RowSpan="2" Stroke="#FFBABABA" VerticalAlignment="Top" Width="100" StrokeThickness="15" Fill="#FFDF232A"/>
+		-->
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="about" xml:space="preserve">
+    <value>o aplikaci</value>
+  </data>
+  <data name="addedYouToCircles" xml:space="preserve">
+    <value>přidáno do vašich kruhů</value>
+  </data>
+  <data name="all" xml:space="preserve">
+    <value>vše</value>
+  </data>
+  <data name="basicInfo" xml:space="preserve">
+    <value>Základní informace</value>
+  </data>
+  <data name="best" xml:space="preserve">
+    <value>Nejlepší</value>
+  </data>
+  <data name="bigPosts" xml:space="preserve">
+    <value>PŘÍSPĚVKY</value>
+  </data>
+  <data name="bragging" xml:space="preserve">
+    <value>Čím se můžu pochlubit</value>
+  </data>
+  <data name="bySigning" xml:space="preserve">
+    <value>Přihlášením ke službě Google+ souhlasíte se smluvními podmínkami společnosti Google.</value>
+  </data>
+  <data name="camera" xml:space="preserve">
+    <value>fotoaparát</value>
+  </data>
+  <data name="categories" xml:space="preserve">
+    <value>kategorie</value>
+  </data>
+  <data name="category" xml:space="preserve">
+    <value>kategorie</value>
+  </data>
+  <data name="circles" xml:space="preserve">
+    <value>kruhy</value>
+  </data>
+  <data name="clear" xml:space="preserve">
+    <value>vymazat</value>
+  </data>
+  <data name="commented" xml:space="preserve">
+    <value>okomentoval/a</value>
+  </data>
+  <data name="communities" xml:space="preserve">
+    <value>komunity</value>
+  </data>
+  <data name="community" xml:space="preserve">
+    <value>KOMUNITA</value>
+  </data>
+  <data name="contributeTo" xml:space="preserve">
+    <value>Přispět do</value>
+  </data>
+  <data name="currently" xml:space="preserve">
+    <value>Aktuálně</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>smazat</value>
+  </data>
+  <data name="didSomething" xml:space="preserve">
+    <value>did something that I don't know xD</value>
+  </data>
+  <data name="edit" xml:space="preserve">
+    <value>upravit</value>
+  </data>
+  <data name="education" xml:space="preserve">
+    <value>Vzdělání</value>
+  </data>
+  <data name="employment" xml:space="preserve">
+    <value>Zaměstnání</value>
+  </data>
+  <data name="everyone" xml:space="preserve">
+    <value>Všichni</value>
+  </data>
+  <data name="gavePlusOne" xml:space="preserve">
+    <value>dal/a +1 vašemu komentáři</value>
+  </data>
+  <data name="gender" xml:space="preserve">
+    <value>Pohlaví</value>
+  </data>
+  <data name="getMore" xml:space="preserve">
+    <value>zobrazit více</value>
+  </data>
+  <data name="git" xml:space="preserve">
+    <value>sdílet</value>
+    <comment>p</comment>
+  </data>
+  <data name="googleBrowser" xml:space="preserve">
+    <value>google+ v prohlížeči</value>
+  </data>
+  <data name="googlePlus" xml:space="preserve">
+    <value>Google+ klient pro Windows Phone</value>
+  </data>
+  <data name="imFaggot" xml:space="preserve">
+    <value>OP is a faggot (or report bug)</value>
+  </data>
+  <data name="intro" xml:space="preserve">
+    <value>Úvod</value>
+  </data>
+  <data name="link" xml:space="preserve">
+    <value>odkaz</value>
+  </data>
+  <data name="linkContent" xml:space="preserve">
+    <value>Vložte odkaz (včetně "http://) a stiskněte OK pro pokračování.</value>
+  </data>
+  <data name="links" xml:space="preserve">
+    <value>Odkazy</value>
+  </data>
+  <data name="login" xml:space="preserve">
+    <value>PŘIHLÁSIT SE</value>
+  </data>
+  <data name="lookingFor" xml:space="preserve">
+    <value>Hledám</value>
+  </data>
+  <data name="metionedYou" xml:space="preserve">
+    <value>zmínil/a se o vás</value>
+  </data>
+  <data name="newPost" xml:space="preserve">
+    <value>nový příspěvek</value>
+  </data>
+  <data name="nicks" xml:space="preserve">
+    <value>Další jména</value>
+  </data>
+  <data name="notifications" xml:space="preserve">
+    <value>notifikace</value>
+  </data>
+  <data name="occupation" xml:space="preserve">
+    <value>Povolání</value>
+  </data>
+  <data name="otherProfiles" xml:space="preserve">
+    <value>Ostatní profily</value>
+  </data>
+  <data name="photo" xml:space="preserve">
+    <value>obrázek</value>
+  </data>
+  <data name="places" xml:space="preserve">
+    <value>Místa</value>
+  </data>
+  <data name="posted" xml:space="preserve">
+    <value>sdíleno</value>
+  </data>
+  <data name="postedInCommunity" xml:space="preserve">
+    <value>sdíleno v komunitě</value>
+  </data>
+  <data name="postIn" xml:space="preserve">
+    <value>S kým sdílet:</value>
+  </data>
+  <data name="postInCommunity" xml:space="preserve">
+    <value>sdílet v komunitě</value>
+  </data>
+  <data name="posts" xml:space="preserve">
+    <value>příspěvky</value>
+  </data>
+  <data name="previous" xml:space="preserve">
+    <value>Předchozí</value>
+  </data>
+  <data name="privacy" xml:space="preserve">
+    <value>Soukromí:</value>
+  </data>
+  <data name="profile" xml:space="preserve">
+    <value>profil</value>
+  </data>
+  <data name="recent" xml:space="preserve">
+    <value>Nedávno</value>
+  </data>
+  <data name="refresh" xml:space="preserve">
+    <value>aktualizovat</value>
+  </data>
+  <data name="relationship" xml:space="preserve">
+    <value>Vztah</value>
+  </data>
+  <data name="reply" xml:space="preserve">
+    <value>odpovědět</value>
+  </data>
+  <data name="reshare" xml:space="preserve">
+    <value>sdílet dál</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>hledat</value>
+  </data>
+  <data name="signIn" xml:space="preserve">
+    <value>Přihlásit se</value>
+  </data>
+  <data name="signOut" xml:space="preserve">
+    <value>odhlásit se</value>
+  </data>
+  <data name="skills" xml:space="preserve">
+    <value>Dovednosti</value>
+  </data>
+  <data name="story" xml:space="preserve">
+    <value>Příběh</value>
+  </data>
+  <data name="stream" xml:space="preserve">
+    <value>stream</value>
+  </data>
+  <data name="tagline" xml:space="preserve">
+    <value>Tagline</value>
+  </data>
+  <data name="text" xml:space="preserve">
+    <value>Text:</value>
+  </data>
+  <data name="usingThisSoftware" xml:space="preserve">
+    <value>Při používání této aplikace souhlasíte se smluvními podmínkami společnosti Google.</value>
+  </data>
+  <data name="work" xml:space="preserve">
+    <value>Práce</value>
+  </data>
+  <data name="you" xml:space="preserve">
+    <value>Vy</value>
+  </data>
+  <data name="yourCircles" xml:space="preserve">
+    <value>Moje kruhy</value>
+  </data>
+  <data name="yourProfile" xml:space="preserve">
+    <value>můj profil</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>zrušit</value>
+  </data>
+  <data name="editComment" xml:space="preserve">
+    <value>upravit komentář</value>
+  </data>
+  <data name="buy" xml:space="preserve">
+    <value>zakoupit</value>
+  </data>
+  <data name="faggot" xml:space="preserve">
+    <value>;(</value>
+  </data>
+  <data name="fullCredentials" xml:space="preserve">
+    <value>Zadejte své kompletní údaje.</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>Heslo:</value>
+  </data>
+  <data name="reportBug" xml:space="preserve">
+    <value>nahlásit chybu</value>
+  </data>
+  <data name="wrongCredentials" xml:space="preserve">
+    <value>Zadali jste chybné přihlašovací údaje. Zkuste to znovu.</value>
+  </data>
+  <data name="commentedYourPost" xml:space="preserve">
+    <value>okomentoval/a váš příspěvek</value>
+  </data>
+  <data name="plusForYourPost" xml:space="preserve">
+    <value>dal/a +1 vašemu příspěvku</value>
+  </data>
+  <data name="aRelationship" xml:space="preserve">
+    <value>Vztah</value>
+  </data>
+  <data name="civilUnion" xml:space="preserve">
+    <value>In a civil union</value>
+  </data>
+  <data name="complicated" xml:space="preserve">
+    <value>Je to komplikované</value>
+  </data>
+  <data name="currentContributeTo" xml:space="preserve">
+    <value>Aktuální</value>
+  </data>
+  <data name="dating" xml:space="preserve">
+    <value>Randění</value>
+  </data>
+  <data name="domesticPartnership" xml:space="preserve">
+    <value>Ve společné domácnosti</value>
+  </data>
+  <data name="dontSay" xml:space="preserve">
+    <value>To je moje soukromá věc</value>
+  </data>
+  <data name="engaged" xml:space="preserve">
+    <value>Zasnoubený/á</value>
+  </data>
+  <data name="female" xml:space="preserve">
+    <value>Žena</value>
+  </data>
+  <data name="friends" xml:space="preserve">
+    <value>Přátelé</value>
+  </data>
+  <data name="inRelationship" xml:space="preserve">
+    <value>Zadaný/á</value>
+  </data>
+  <data name="male" xml:space="preserve">
+    <value>Muž</value>
+  </data>
+  <data name="married" xml:space="preserve">
+    <value>Vdaná/Ženatý</value>
+  </data>
+  <data name="networking" xml:space="preserve">
+    <value>Networking</value>
+  </data>
+  <data name="noSpecified" xml:space="preserve">
+    <value>Nespecifikováno</value>
+  </data>
+  <data name="openRelationship" xml:space="preserve">
+    <value>Zadaný/á</value>
+  </data>
+  <data name="otherGender" xml:space="preserve">
+    <value>Jiné nebo neuvedeno</value>
+  </data>
+  <data name="pastContributeTo" xml:space="preserve">
+    <value>Past</value>
+  </data>
+  <data name="single" xml:space="preserve">
+    <value>Svobodný/á</value>
+  </data>
+  <data name="widowed" xml:space="preserve">
+    <value>Vdova/vdovec</value>
+  </data>
+  <data name="loginError" xml:space="preserve">
+    <value>Během přihlašování se vyskytla chyba. Ujistěte se, že máte aktivní připojení k internetu a povolenou službu Google+ v nastavení vašeho Google účtu.</value>
+  </data>
+  <data name="doYouReallyWant" xml:space="preserve">
+    <value>Opravdu chcete smazat tuto aktivitu?</value>
+  </data>
+  <data name="editPost" xml:space="preserve">
+    <value>Upravit příspěvek</value>
+  </data>
+  <data name="username" xml:space="preserve">
+    <value>Uživatelské jméno:</value>
+  </data>
+  <data name="warning" xml:space="preserve">
+    <value>Varování</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>ano</value>
+  </data>
+  <data name="loading" xml:space="preserve">
+    <value>Načítání...</value>
+  </data>
+  <data name="posting" xml:space="preserve">
+    <value>Sdílení...</value>
+  </data>
+  <data name="uploading" xml:space="preserve">
+    <value>Nahrávání...</value>
+  </data>
+  <data name="enterToken" xml:space="preserve">
+    <value>Vložte token:</value>
+  </data>
+  <data name="areYouGoing" xml:space="preserve">
+    <value>Zúčastníte se?</value>
+  </data>
+  <data name="communitiesTitle" xml:space="preserve">
+    <value>Komunity</value>
+  </data>
+  <data name="events" xml:space="preserve">
+    <value>Události</value>
+  </data>
+  <data name="eventTitle" xml:space="preserve">
+    <value>UDÁLOST</value>
+  </data>
+  <data name="markAsRead" xml:space="preserve">
+    <value>označit za přečtené</value>
+  </data>
+  <data name="maybe" xml:space="preserve">
+    <value>Ničemu se nebráním</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>Ne</value>
+  </data>
+  <data name="people" xml:space="preserve">
+    <value>Lidé</value>
+  </data>
+  <data name="postsTitle" xml:space="preserve">
+    <value>Příspěvky</value>
+  </data>
+  <data name="result" xml:space="preserve">
+    <value>výsledky</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>uložit</value>
+  </data>
+  <data name="type" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="nooo" xml:space="preserve">
+    <value>Neeeeee!</value>
+  </data>
+  <data name="tapTo" xml:space="preserve">
+    <value>Stiskněte OK pro pokračování</value>
+  </data>
+  <data name="unexpected" xml:space="preserve">
+    <value>Došlo k neočekávané chybě. Kontaktujte prosím vývojáře.</value>
+  </data>
+</root>
