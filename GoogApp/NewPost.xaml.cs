@@ -143,7 +143,7 @@ namespace GoogApp
                 //myImage.Source = bmp;
                 //previewGrid.DataContext = media;
                 //ost.Media tmpMedia = new Post.Media();
-                tmbImage.Source = new BitmapImage(new Uri("https:" + media[6]["27639957"][6].ToString(), UriKind.Absolute));
+                tmbImage.Source = new BitmapImage(new Uri("https:" + media.Last.First.First[6].ToString(), UriKind.Absolute));
                 titleLabel.Text = null;
                 sourceLabel.Text = null;
                 clearButton.Visibility = System.Windows.Visibility.Visible;
@@ -220,12 +220,12 @@ namespace GoogApp
                     {
                         try
                         {
-                            System.Diagnostics.Debug.WriteLine(media[7].First.First[5][0].ToString());
-                            tmbImage.Source = new BitmapImage(new Uri("https:" + media[7].First.First[5][0].ToString(), UriKind.Absolute));
+                            System.Diagnostics.Debug.WriteLine(media.Last.First.First[5][0].ToString());
+                            tmbImage.Source = new BitmapImage(new Uri("https:" + media.Last.First.First[5][0].ToString(), UriKind.Absolute));
                         }
                         catch { }
-                        titleLabel.Text = media[7].First.First[2].ToString();
-                        sourceLabel.Text = media[7].First.First[0].ToString();
+                        titleLabel.Text = media.Last.First.First[2].ToString();
+                        sourceLabel.Text = media.Last.First.First[0].ToString();
                         clearButton.Visibility = System.Windows.Visibility.Visible;
                         //Global.prog.IsVisible = false;
                         //Global.prog.IsIndeterminate = false;
