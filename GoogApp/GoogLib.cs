@@ -2148,7 +2148,16 @@ namespace GoogApp
             request.AddParameter("at", _foundSession);
             var resp = await _client.GetResponseAsync(request);
             JArray root = JArray.Parse(_parseJSON(resp.Content));
-            return (int)root[0][switcher][1];
+            int result;
+            try
+            {
+                result = (int)root[0][switcher][1];
+            }
+            catch
+            {
+                result = (int)root[0][1][1];
+            }
+            return result;
         }
 
         public bool IsConnected()
