@@ -565,7 +565,7 @@ namespace GoogApp
 			_client = new RestClient();
 			_info = new Info();
             _client.CookieContainer = new System.Net.CookieContainer();
-            _client.UserAgent = "GoogleLoginService/1.3";
+            _client.UserAgent = "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:32.0) Gecko/20100101 Firefox/32.0.3 gPlus/1.0";
 		}
 
         //------------------------ Private functions ------------------------
@@ -1196,8 +1196,23 @@ namespace GoogApp
 				cookieRequest.AddParameter("Email", email);
 				cookieRequest.AddParameter("Passwd", password);
                 cookieRequest.AddParameter("PersistentCookie", "true");
-				cookieRequest.AddParameter("continue", "https://plus.google.com/?gpsrc=gplp0&partnerid=gplp0");
-				cookieRequest.AddHeader("Content-Type", "application/x-www-form-urlencoded");
+				cookieRequest.AddParameter("continue", "https://plus.google.com/?gpsrc=gplp0");
+                cookieRequest.AddParameter("bgresponse", "js_disabled");
+                /*
+  <input name="service" type="hidden" value="oz">
+cookieRequest.AddParameter("_utf8", "&#9731;");
+  <input type="hidden" id="pstMsg" name="pstMsg" value="0">
+  <input type="hidden" id="dnConn" name="dnConn" value="">
+  <input type="hidden" id="checkedDomains" name="checkedDomains"
+         value="youtube">
+<input id="signIn" name="signIn" class="rc-button rc-button-submit" type="submit" value="Zaloguj się">
+  <label class="remember">
+  <input  id="PersistentCookie" name="PersistentCookie"
+                 type="checkbox" value="yes"
+                 checked="checked">
+                 */
+
+                cookieRequest.AddHeader("Content-Type", "application/x-www-form-urlencoded");
 
                 var cookieResp = await _client.GetResponseAsync(cookieRequest);
                 if (cookieResp.StatusCode == HttpStatusCode.OK)
